@@ -1,28 +1,31 @@
+/* removed margins & padding, set fonts 
+flex element 100 viewport height & width */
 body{
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     font-size: 14px;
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     height: 100vh;
+    width: 100vw;
 
 }
 
+/* removed link formatting */
 a, a:visited {
     text-decoration: none;
     color: #555555;
 }
 
 
+/* Header items */
+
 .topmenu{
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
-    margin: 0 10px 0 10px;
-
- 
 }
 
 .topmenu a {
@@ -38,7 +41,6 @@ a, a:visited {
     opacity: 0.5;
 }
 
-
 #profile {
     width: 38px;
     height: 38px;
@@ -46,11 +48,9 @@ a, a:visited {
     opacity: 1;
 }
 
-
 .nav-link:hover {
     text-decoration: underline;
 }
-
 
 .topmenu img:hover {
     opacity: 1;
@@ -59,35 +59,35 @@ a, a:visited {
     background-color:  rgba(242,242,242,9);
 }
 
-/* ugly fix,but looks ok */
+/* to fix later, couldn't figure another way to add hover on apps item */
 .topmenu #apps:hover {
     box-shadow: 0px 0px 0px 10px rgba(242,242,242,9);
 }
 
+
+/* Contents stuff */
 main {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    height: 55vh;
-    position: relative;
-    top: 50px;
-    max-width: 710px;
-    min-width: 400px;
-    min-height: 400px;
     flex-grow: 1;
     flex-shrink: 0;
     margin: auto;
+
 }
 
-form {
-     width: 90%;
-     text-align: center;
 
+form {
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
 }
 
 input {
-    width: 100%;
+    width: 50vw;
+    max-width: 600px;
+    min-width: 300px;
     height: 45px;
     border-radius: 30px;
     margin: 20px 0 20px 0;
@@ -99,12 +99,14 @@ input {
 #searchbox {
     position: relative;
 }
+
 #searchbox > img {
     position: absolute;
     top: 33px;
     left: 15px;
     opacity: 0.4;
 }
+
 
 input:hover {
     box-shadow: 0px 1px 5px 1px rgba(230,230,230,9),  0px 2px 3px 1px rgba(245,245,245,9) ;
@@ -151,7 +153,7 @@ input:active, input:focus{
 
 .offered{
    width: 100%;
-   height: 200px;
+   height: 60px;
    text-align: center;
    padding-top: 20px;
 }
@@ -169,6 +171,8 @@ input:active, input:focus{
     color: #0b0080;
 }
 
+
+/* Footer stuff */
 
 
 .footer, #location {
@@ -197,9 +201,9 @@ footer {
     flex-shrink: 0;
     flex-flow: row wrap;
     justify-content: space-between;
+    min-width: 400px;
     
     
-
 }
 
 .footerleft,.footerright {
@@ -220,8 +224,6 @@ footer .nav-link {
 @media (max-width: 1200px) {
     .footer {
         justify-content: space-evenly;
-        min-width: 400px;
-
     }
 }
 
