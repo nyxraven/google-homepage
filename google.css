@@ -3,8 +3,10 @@ body{
     padding: 0;
     font-family: Arial, sans-serif;
     font-size: 14px;
- 
-  
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
 }
 
 a, a:visited {
@@ -72,6 +74,9 @@ main {
     top: 50px;
     max-width: 710px;
     min-width: 400px;
+    min-height: 400px;
+    flex-grow: 1;
+    flex-shrink: 0;
     margin: auto;
 }
 
@@ -86,7 +91,9 @@ input {
     height: 45px;
     border-radius: 30px;
     margin: 20px 0 20px 0;
-    border: 1px solid #dddddd
+    border: 1px solid #dddddd;
+    padding-left: 60px;
+    
 } 
 
 #searchbox {
@@ -179,17 +186,18 @@ input:active, input:focus{
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
- 
  
  }
 
  .footer {
     display: flex;
+    flex-shrink: 0;
     flex-flow: row wrap;
     justify-content: space-between;
+    
     
 
 }
