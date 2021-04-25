@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    width: 100vw;
+}
+
+/* to fix redundand things */
+
+.stickyheader{
+    display: flex;
+    flex-flow: row nowrap;
+    min-width: 1265px;
+    justify-content: space-between;
+    align-content: center;
+
+    /*make top menu sticky*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+
+    /*for scroll overlapping*/
+    opacity: 1;
+    z-index: 2;
+}
+
+
+#lnav, #rnav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+#glogo {
+    width: 90px;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+#searchbar {
+    width: 690px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid #dddddd;
+    margin-left: 30px;
+    position: relative;
+    box-shadow: 0px 0px 7px 1px #eeeeee,  0px 1px 4px 2px #eeeeee ;
+    padding-left: 20px;
+    color: black;
+}
+
+#searchbar:hover {
+    box-shadow: 0px 1px 8px 1px #dddddd,  0px 1px 4px 1px #eeeeee;
+}
+
+#searchbar:hover {
+    outline: none;
+}
+
+
+#searchbox > img {
+    position: absolute;
+    width: 20px;
+    opacity: 0.4;
+}
+
+#glass {
+    top: 20px;
+    left: 815px;
+
+}
+
+#close {
+    top: 20px;
+    left: 770px;
+    border-right: 1px solid #dddddd;
+    padding-right: 10px;
+}
+
+#rnav >img {
+
+    margin-right: 25px;
+}
+
+#profile {
+    width: 30px;
+    border-radius: 50%;
+}
+
+#apps {
+    opacity: 0.4;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+.navmenu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 70px;
+    min-width: 1265px;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px;
+
+}
+
+#container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 840px;
+}
+
+
+#menuitems1 {
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    width: 520px;
+    left: 155px;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+}
+
+#menuitems2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-content: center;
+    text-align: center;
+    padding-left: 15px;
+
+}
+
+#menuitems3 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin-right: 25px; 
+
+}
+
+#menuitems2 a {
+    padding-left: 20px;;
+}
+
+.navlink a{
+    text-decoration: none;
+    color: #777777;
+
+}
+
+
+.navlink img {
+    width: 20px;
+    position: relative;
+    top: 4px;
+    opacity: 0.5;
+}
+
+
+
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;  
+    position: relative; 
+    top: 90px;
+    margin-left: 175px;
+}
+
+.submain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 690px;
+
+}
+
+#resultsnumber {
+    color: #777777;
+}
+
+#peopleask {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.ask {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 680px;
+    font-size: 16px;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+#peopleask h3, #relatedt  h3  {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 5px 0 0 0;
+}
+#peopleask a {
+    text-decoration: none;
+    color: black;
+}
+
+#feedback {
+    position: relative;
+    font-size: 13px;
+    color: #888888;
+    left: 610px;
+    top: -10px;
+    background-color: white;
+    margin: 3px;
+    padding-left: 10px;
+    opacity: 1;
+    z-index: 2;
+}
+
+.searchline{
+    margin-bottom: 15px;
+}
+
+.searchline a {
+    text-decoration: none;
+    color: darkblue ;
+
+}
+
+.searchlink > img {
+    width: 20px;
+    padding-top: 5px;
+}
+
+.searchtitle h3 {
+    font-size: 21px;
+    font-weight: normal;
+    margin: 7px 0 7px 0;
+
+}
+
+.seachlink {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.searchcontent {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: top;
+    color: #555555;
+    line-height: 1.5em;
+    padding-top:0;
+}
+
+.searchimg {
+    width: 100px;
+    padding-right: 5px;
+    border-radius: 10px;
+
+}
+
+.searchtext {
+    padding-right: 15px;
+}
+
+.searchcontent p {
+    margin: 0;
+    padding: 0 15px 0 5px;
+}
+
+
+.relatedline {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width:  690px;
+}
+
+.related {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: center;
+    background-color: #f1f3f4;
+    border-radius: 50px;
+    margin: 5px 10px 5px 5px;
+    padding-left: 20px;
+    width: 340px; 
+    height: 50px;
+}
+
+.related img {
+    width: 25px;
+    opacity: 0.5;
+}
+.related a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+}
+
+.related a:hover{
+    text-decoration: underline;
+}
+
+#relatedt  h3 {
+    padding-bottom: 15px;
+}
+
+/*----------------------- Footer ----------------*/
+
+footer {
+
+    margin-top:calc(5% + 60px);
+  }
