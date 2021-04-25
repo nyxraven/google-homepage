@@ -133,11 +133,14 @@ input:active, input:focus{
     margin: 5px 5px 5px 5px;
     padding: 0 15px 0 15px;
     opacity: 0.9;
- 
-    
+     
 }
 
-
+button a, button a:visited {
+    color: black;
+    opacity:1;
+    
+}
 
 
 .button:hover {
