@@ -5,6 +5,7 @@ body {
     font-size: 14px;
     font-family: Arial, sans-serif;
     width: 100vw;
+    background-color: white;
 }
 
 /* to fix redundand things */
@@ -20,11 +21,11 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: white;
+    
 
     /*for scroll overlapping*/
     opacity: 1;
-    z-index: 2;
+    z-index: 7;
 }
 
 
