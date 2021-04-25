@@ -16,7 +16,7 @@ body {
     min-width: 1265px;
     justify-content: space-between;
     align-content: center;
-
+    background-color: white;
     /*make top menu sticky*/
     position: fixed;
     width: 100%;
@@ -181,6 +181,7 @@ main {
     align-items: flex-start;  
     position: relative; 
     top: 90px;
+    background-color: white;
     margin-left: 175px;
 }
 
